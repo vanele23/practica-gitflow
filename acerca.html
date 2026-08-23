@@ -1,25 +1,16 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de</title>
-</head>
-<body>
+<h2>Comandos utilizados con Git Flow</h2>
 
-    <h1>Acerca de</h1>
+<p>Para desarrollar esta funcionalidad se utilizaron los siguientes comandos:</p>
 
-    <p>
-        Este proyecto fue desarrollado como parte de la práctica de
-        Gestión de Configuración de Software.
-    </p>
+<pre>
+git flow feature start hola-mundo
 
-    <p>
-        El objetivo es aplicar Git Flow para gestionar ramas,
-        funcionalidades y versiones del proyecto.
-    </p>
+git add .
+git commit -m "Agrega funcionalidad Hola Mundo"
 
-    <a href="index.html">Volver al inicio</a>
+git flow feature publish hola-mundo
 
-</body>
-</html>
+git flow feature finish hola-mundo --no-ff
+
+git push origin develop
+</pre>
